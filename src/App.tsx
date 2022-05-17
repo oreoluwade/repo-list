@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import SearchBar from "./components/search-bar";
 
-function App() {
+const App: React.FC = () => {
+  const [searchQuery, setSearchQuery] = useState("re");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-screen h-screen flex justify-center items-center p-10">
+      <div className="flex flex-col h-full w-full">
+        <SearchBar
+          value={searchQuery}
+          onChange={e => {
+            setSearchQuery(e.target.value);
+          }}
+          placeholder="Start typing to search for repositories"
+        />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
