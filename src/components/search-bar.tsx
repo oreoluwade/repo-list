@@ -14,7 +14,7 @@ const SearchBar: React.FC<SearchBoxProps> = ({
   placeholder
 }) => {
   return (
-    <div className="w-1/2 border border-[2px] border-solid border-[grey] h-[50px] rounded-lg flex items-center mx-auto px-4 py-[2px]">
+    <div className="w-1/2 border border-[2px] border-solid border-[grey] h-[50px] rounded-lg flex items-center px-4 py-[2px]">
       <SearchIcon className="cursor-pointer" />
       <div className="w-2" />
       <input
