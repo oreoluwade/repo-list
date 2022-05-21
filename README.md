@@ -21,3 +21,5 @@
 a. The search bar for typing a search query so as to search for matching repositiories.
 b. An input field to specify the number of results wanted.
 c. The table along with the paginator for displaying the data and navigating through the results
+
+- No tests were written for this assessment due to major time constraints
